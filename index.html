@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Gainz</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: "Antic Didone", serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg.jpg);
+        background-size: 1700px;
+    }
+    .left{
+        line-height: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        text-align: center; line-height: 10px;
+    }
+    .mid{
+        display: block;
+        margin: 100px auto;
+        width: 50%;
+        /* border: 2px solid green; */
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 40px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        color: grey;
+    }
+    .left img{
+        width: 40px;
+        filter: invert(100%);
+    }
+    .btn{
+        font-family: "Antic Didone", serif;
+        margin: 8px 7px;
+        color: white;
+        background-color: transparent;
+        font-size: 13px;
+        padding: 6px 10px;
+        border: .5px solid white;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: grey;
+    }
+    #logotxt{
+        font-family: "Antic Didone", serif;
+        font-size: 15px;
+    }
+    .container{
+        position: absolute;
+        left: 40px;
+        top: 200px;
+        border: .01px solid white;
+        border-radius: 30px;
+        margin: 106px 60px;
+        padding: 20px;
+        width: 25%;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        padding: 10px;
+        margin: 15px auto;
+        border: 1px solid white;
+        color: white;
+        border-radius: 20px;
+        background-color: transparent;
+        font-family: "Antic Didone", serif;
+        width: 50%;   
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 40%;
+        margin: 25px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/bg.png" alt="">
+            <div id="logotxt">Garage Gainz</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Plans</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Our Locations</button>
+            <button class="btn">Call Us Now</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join Garage Gainz</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
